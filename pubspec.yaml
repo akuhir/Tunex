@@ -1,0 +1,77 @@
+name: tunex
+description: "Tunex — Feel Every Beat. A premium offline Android music player."
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State management
+  flutter_riverpod: ^2.5.1
+
+  # Routing
+  go_router: ^14.2.0
+
+  # Audio
+  on_audio_query_forked: ^2.9.0
+  just_audio: ^0.9.40
+  audio_service: ^0.18.15
+  audio_session: ^0.1.21
+  rxdart: ^0.28.0
+  android_intent_plus: ^5.2.0
+
+  # Permissions
+  permission_handler: ^12.0.0
+  device_info_plus: ^11.2.0
+
+  # Visuals
+  # google_fonts removed — Poppins is bundled locally, see the `fonts:`
+  # block below and lib/core/theme/app_typography.dart.
+  cached_network_image: ^3.4.1
+  palette_generator: ^0.3.3+3
+  shimmer: ^3.0.0
+  flutter_svg: ^2.0.10+1
+
+  # Storage
+  shared_preferences: ^2.3.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Utilities
+  equatable: ^2.0.5
+  intl: ^0.19.0
+  path_provider: ^2.1.4
+
+  cupertino_icons: ^1.0.8
+  url_launcher: ^6.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  build_runner: ^2.4.13
+  hive_generator: ^2.0.1
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  # Poppins is bundled locally (not fetched via google_fonts at
+  # runtime) since Tunex is a fully offline app — a first launch with
+  # no internet connection previously crashed/degraded text rendering
+  # trying to download font files from fonts.gstatic.com.
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
