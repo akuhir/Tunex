@@ -105,7 +105,7 @@ class QueueSheet extends ConsumerWidget {
                               mainAxisSize: MainAxisSize.min,
                               children: [
                                 if (isCurrent)
-                                  const Icon(Icons.equalizer_rounded,
+                                  Icon(Icons.equalizer_rounded,
                                       color: AppColors.primary, size: 20),
                                 if (!isCurrent)
                                   IconButton(
