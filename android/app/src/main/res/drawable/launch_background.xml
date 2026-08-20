@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Native launch background shown before Flutter's first frame draws.
+     Solid Tunex navy so there's no white flash before our own animated
+     splash screen (SplashScreen widget) takes over. -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/tunex_background" />
+</layer-list>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Theme shown for the very first native frame, before Flutter
+         attaches — swapped out immediately for NormalTheme once the
+         Flutter view is ready. -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@drawable/launch_background</item>
+    </style>
+
+    <!-- Theme applied to the Android Window as soon as the process
+         has started. This theme is visible to the user while the
+         Flutter UI initializes. -->
+    <style name="NormalTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <item name="android:windowBackground">@color/tunex_background</item>
+    </style>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Matches AppColors.background (#0F172A) in the Flutter theme,
+         so the native launch screen and the Dart splash screen are
+         visually seamless. -->
+    <color name="tunex_background">#0F172A</color>
+</resources>
